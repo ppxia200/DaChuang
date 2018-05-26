@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssm.exc.mapper.TestMapper">
+	<select id="queryItems" resultType="item" parameterType="int">
+		SELECT * FROM item WHERE ownerId = #{id}
+	</select>
+</mapper>
